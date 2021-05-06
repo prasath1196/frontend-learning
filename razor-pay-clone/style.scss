@@ -1,5 +1,61 @@
+
+
+// FONTS AND FONT STYLES
+@import url('https://fonts.googleapis.com/css?family=Mulish:100,200,300,400,500,600,700,800,900&display=swap');
+
+$mulish: 'Mulish',sans-serif;
+$fw-extra-light:200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold:600;
+$fw-bold: 700;
+$fw-extra-bold:800;
+$fw-min: 100;
+$fw-max: 900;
+
+// COLORS
+$plain-white: #ffffff;
+$solid-black: black; 
+$deep-cove: #030C2B;
+$dodger-blue: #3594FA;
+$endeavour: #0054A2;
+$matisee: #205EA8;
+$malibu:#97BEF9;
+
+// Margins
+.mt-2pct{
+  margin-top: 2%;
+}
+
+.mt-3pct{
+  margin-top: 3%;
+}
+.mt-6pct{
+  margin-top: 6%;
+}
+.mt-5pct{
+  margin-top: 5%;
+}
+.mt-8pct{
+  margin-top: 8%;
+}
+
+
+// Utility 
+
+.full-width{
+  width: 100%;
+}
+
+.content-wrapper{
+  max-width: 1025px;
+  margin:0 auto;
+  justify-content: center;
+}
+
 body{
-  background-color: #030C2B;
+  background-color: $deep-cove;
   margin: 0;
 }
 
@@ -7,38 +63,31 @@ body{
 
 }
 .btn-blue{
-  background-color: #3594FA;
+  background-color: $dodger-blue;
   border:none;
   outline: none;
 }
 .btn-trial{
-  background-color: #3395ff;
-  color: #fff;
+  background-color: $dodger-blue;
+  color: $plain-white;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 14px;
   text-decoration: none;
   margin-left: 20px;
-  font-weight: bold;
+  font-weight: $fw-bold;
 }
 
 .float-header{  
-  .triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid red;
-    border-right: 100px solid transparent;
-  }
-  
-  font-family: 'Helvatica',sans-serif;
-  background-color: #ffff;
+  font-family: $mulish;
+  background-color: $plain-white;
   display: block;
   text-align: center;
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   position: fixed;
-
+  top:0;
   .text-lg{
     display: none;
   }
@@ -48,9 +97,9 @@ body{
   .content{
     padding-left: 1rem;
     display: inline-block;
-    font-size: 18px;
-    color: #205EA8;
-    font-weight: 500;
+    font-size: 16px;
+    color:$matisee;
+    font-weight: $fw-bold;
   }
   .actions{
     display: inline-block;
@@ -59,23 +108,37 @@ body{
     .col{
       display: inline-block;
       vertical-align: top;
-      color: #0054A2;
+      color: $endeavour;
       font-size: 14px;
       .time{
-        font-weight: 900;
+        font-size: 14px;
+        font-weight: $fw-max;
       }
       .text{
         padding-top: 2px;
         text-align: center;
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 8px;
+        font-weight: $fw-semi-bold;
       }
     }
     display: none;
     padding-right: 1rem;
-    border-right: 1px solid #97BEF9;
+    border-right: 1px solid $malibu;
     ;
     vertical-align: middle;
+  }
+}
+
+
+.navbar{
+  .logo{
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .hiring-button{
+    float: right;
+    display:inline-block
   }
 }
 

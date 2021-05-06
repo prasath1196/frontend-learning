@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish:100,200,300,400,500,600,700,800,900&display=swap");
+.mt-2pct {
+  margin-top: 2%; }
+
+.mt-3pct {
+  margin-top: 3%; }
+
+.mt-6pct {
+  margin-top: 6%; }
+
+.mt-5pct {
+  margin-top: 5%; }
+
+.mt-8pct {
+  margin-top: 8%; }
+
+.full-width {
+  width: 100%; }
+
+.content-wrapper {
+  max-width: 1025px;
+  margin: 0 auto;
+  justify-content: center; }
+
 body {
   background-color: #030C2B;
   margin: 0; }
@@ -8,29 +32,25 @@ body {
   outline: none; }
 
 .btn-trial {
-  background-color: #3395ff;
-  color: #fff;
+  background-color: #3594FA;
+  color: #ffffff;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 14px;
   text-decoration: none;
   margin-left: 20px;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .float-header {
-  font-family: 'Helvatica',sans-serif;
-  background-color: #ffff;
+  font-family: "Mulish", sans-serif;
+  background-color: #ffffff;
   display: block;
   text-align: center;
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  position: fixed; }
-  .float-header .triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid red;
-    border-right: 100px solid transparent; }
+  position: fixed;
+  top: 0; }
   .float-header .text-lg {
     display: none; }
   .float-header .text-sm {
@@ -38,9 +58,9 @@ body {
   .float-header .content {
     padding-left: 1rem;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     color: #205EA8;
-    font-weight: 500; }
+    font-weight: 700; }
   .float-header .actions {
     display: inline-block; }
   .float-header .timer {
@@ -54,12 +74,21 @@ body {
       color: #0054A2;
       font-size: 14px; }
       .float-header .timer .col .time {
+        font-size: 14px;
         font-weight: 900; }
       .float-header .timer .col .text {
         padding-top: 2px;
         text-align: center;
-        font-size: 12px;
-        font-weight: 300; }
+        font-size: 8px;
+        font-weight: 600; }
+
+.navbar .logo {
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle; }
+.navbar .hiring-button {
+  float: right;
+  display: inline-block; }
 
 @media screen and (min-width: 375px) {
   .float-header .content .text-sm {
